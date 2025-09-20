@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول مواعيد عيادة الأسنان</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2a7f9c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #2a7f9c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+        .booked {
+            color: #e74c3c;
+        }
+        .break {
+            background-color: #ffe6cc;
+            color: #cc7a00;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>جدول مواعيد عيادة د. أحمد السني</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>التوقيت</th>
+                    <th>الإثنين</th>
+                    <th>الثلاثاء</th>
+                    <th>الأربعاء</th>
+                    <th>الخميس</th>
+                    <th>الجمعة</th>
+                    <th>السبت</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00 صباحاً</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - تنظيف</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - حشوة</td>
+                    <td class="break">مغلق</td>
+                    <td class="available">متاح</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00 صباحاً</td>
+                    <td class="booked">محجوز - كشف</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - تبييض</td>
+                    <td class="available">متاح</td>
+                    <td class="break">مغلق</td>
+                    <td class="booked">محجوز - تقويم</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00 ظهراً</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - خلع</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - جراحة</td>
+                    <td class="break">مغلق</td>
+                    <td class="available">متاح</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 1:00 ظهراً</td>
+                    <td class="break">استراحة</td>
+                    <td class="break">استراحة</td>
+                    <td class="break">استراحة</td>
+                    <td class="break">استراحة</td>
+                    <td class="break">مغلق</td>
+                    <td class="break">استراحة</td>
+                </tr>
+                <tr>
+                    <td>1:00 - 2:00 ظهراً</td>
+                    <td class="booked">محجوز - تركيب</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - كشف</td>
+                    <td class="available">متاح</td>
+                    <td class="break">مغلق</td>
+                    <td class="booked">محجوز - تنظيف</td>
+                </tr>
+                <tr>
+                    <td>2:00 - 3:00 عصراً</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - حشوة</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - تبييض</td>
+                    <td class="break">مغلق</td>
+                    <td class="available">متاح</td>
+                </tr>
+                <tr>
+                    <td>3:00 - 4:00 عصراً</td>
+                    <td class="booked">محجوز - تقويم</td>
+                    <td class="available">متاح</td>
+                    <td class="booked">محجوز - خلع</td>
+                    <td class="available">متاح</td>
+                    <td class="break">مغلق</td>
+                    <td class="booked">محجوز - كشف</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            <p>لحجز موعد، يرجى الاتصال على الرقم: 0123456789 أو حجز موعد عبر الموقع الإلكتروني</p>
+            <p>العنوان: شارع المشفى، عمارة 5، الطابق الثالث، المدينة</p>
+        </div>
+    </div>
+</body>
+</html>
